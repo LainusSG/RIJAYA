@@ -1,14 +1,9 @@
 services:
 
-  mysql:
-    image: mysql:8.3
-    container_name: miMySQL-container
+  racsapp:
+    build: .
+    restart: always
     ports:
-      - "3306:3306"
-    environment:
-      MYSQL_ALLOW_EMPTY_PASSWORD: true
+      - "4200:80"
     volumes:
-      - MiVolumenDocker:/var/lib/mysql
-
-volumes:
-  MiVolumenDocker:
+      - .:/app

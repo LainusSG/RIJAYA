@@ -1,0 +1,100 @@
+.fondo{
+    width: 100%;
+    height: 100vh;
+    background-image: url("/imagenes/FONDO.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+
+.example-container {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+  }
+  
+  .example-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .example-sidenav {
+    padding: 20px;
+    background-color: #048d9c;
+    border-radius: 50px;
+  }
+
+
+.aguacate{
+    vertical-align: top;
+    display: inline-block; 
+}
+
+
+.chayote{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.mariposa{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url('/public/fonts/Orbitron/Orbitron-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('/public/fonts/Barlow/Barlow-BlackItalic.ttf')format('truetype');
+
+}
+
+
+
+h1{
+  color: white;
+  font-family: 'Orbitron';
+  font-weight: 100;
+  font-size: 60px;
+}
+
+
+h2{
+  color: white;
+  font-family: 'Orbitron';
+  font-weight: 100;
+  font-size: 30px;
+}
+
+.imgcontainer {
+  text-align: center;
+}
+
+img.avatar {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.img2 {
+  height: 100px;
+  width: 100px;
+  border: 5px solid rgb(90, 89, 89);
+  border-radius: 50%;
+}

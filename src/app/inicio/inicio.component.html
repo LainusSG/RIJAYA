@@ -1,0 +1,48 @@
+
+<div class="fondo">
+  <mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+      
+      <div class="imgcontainer">
+        <img src="imagenes/LOGO RACSAPP-BLANCO.png" alt="Avatar" class="avatar">
+      </div>
+
+      <h2> MÓDULOS </h2>
+      
+
+      <mat-list role="list" >
+      <mat-list-item role="listitem" >Almacén</mat-list-item>
+      <mat-list-item role="listitem">Recepción de Productos</mat-list-item>
+      <mat-list-item role="listitem">Salida de Productos</mat-list-item>
+      <mat-list-item role="listitem">Configuración</mat-list-item>
+      <mat-list-item role="listitem">Usuarios</mat-list-item>
+      </mat-list>
+
+
+
+
+    </mat-drawer>
+
+    <div style="position: absolute;right: 50px; top:  50px; ">
+        <a href="/usuarios"><img class="img2" src="https://www.w3schools.com/howto/img_avatar.png" /></a>
+    </div>
+
+
+    
+    <div class="example-sidenav-content" class="aguacate" style="position: absolute;left: 50px; top:  50px; ">
+      <button  mat-mini-fab (click)="drawer.toggle()">
+          <mat-icon>menu</mat-icon>
+      </button>
+      
+    </div>
+
+  </mat-drawer-container>
+
+
+  <div class="chayote">
+  <h1> BIENVENIDO </h1>
+  </div>
+
+
+
+</div>

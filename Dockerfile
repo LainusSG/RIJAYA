@@ -17,4 +17,3 @@ COPY --from=build /app/dist/racsapp/browser /usr/share/nginx/html
 
 # Specify the command to run NGINX in the foreground
 CMD ["nginx", "-g", "daemon off;"]
-

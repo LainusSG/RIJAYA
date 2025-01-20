@@ -80,12 +80,17 @@ export class Usuario2Component {
   displayedColumns:  string[] = ['name','boton','icon'];
   dataSource = new MatTableDataSource<Nombres>(this.ELEMENT_DATA);
   
-  remove(element) {
-    this.dataSource = new MatTableDataSource<Nombres>(
-      this.dataSource.data
-    );
+  remove(index: number) {
+    const deleteItem = confirm("¿Estás seguro de borrar este usuario?");
+    if (deleteItem) {
+      const data = this.dataSource.data;
+      data.splice(
+        this.paginator.pageIndex * this.paginator.pageSize + index,
+        1
+      );
+      this.dataSource.data = data;
+    }
   }
-
 
 
 

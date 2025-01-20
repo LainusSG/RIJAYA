@@ -19,6 +19,12 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatPaginatorModule} from '@angular/material/paginator';
 
+export interface Nombres {
+  name: string;
+}
+
+
+
 
 @Component({
   selector: 'app-usuario2',
@@ -42,9 +48,13 @@ import {MatPaginatorModule} from '@angular/material/paginator';
   templateUrl: './usuario2.component.html',
   styleUrl: './usuario2.component.css'
 })
+
+
+
+
+
+
 export class Usuario2Component {
-  displayedColumns = ['name','boton','icon'];
-  dataSource = new MatTableDataSource<Element>(ELEMENT_DATA);
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
 
@@ -55,16 +65,32 @@ export class Usuario2Component {
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
   }
-}
 
 
-export interface Element {
-  name: string;
-}
-
-const ELEMENT_DATA: Element[] = [
-  {name: 'Casimiro Gómez González'},
-  {name: 'Juana Cruz Hernández'},
-  {name: 'José Lino Santos García'},
+  
  
-];
+
+  ELEMENT_DATA: Nombres[] = [
+    {name: 'Casimiro Gómez González'},
+    {name: 'Juana Cruz Hernández'},
+    {name: 'José Lino Santos García'},
+  
+  ];
+
+  displayedColumns:  string[] = ['name','boton','icon'];
+  dataSource = new MatTableDataSource<Nombres>(this.ELEMENT_DATA);
+  
+  remove(element:any) {
+    this.dataSource.data.splice(this.ELEMENT_DATA.indexOf(element), 1);
+    this.dataSource = new MatTableDataSource<Nombres>(
+      this.dataSource.data
+    );
+  }
+
+
+
+
+
+
+}
+

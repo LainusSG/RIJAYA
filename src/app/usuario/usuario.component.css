@@ -95,7 +95,6 @@ img.avatar {
 }
 
 .button1:hover {
-  opacity: 0.8;
   background-color: #1be7fd;
 }
 
@@ -148,7 +147,6 @@ input[type=text], input[type=password] {
 }
 
 .button1:hover {
-  opacity: 0.8;
   background-color: #1be7fd;
 }
 
@@ -171,9 +169,14 @@ img.avatar {
 
 .container2{
     text-align: center;
+    width: 100%;
 }
 
-
+.container3{
+  text-align: center;
+  width: 100%;
+  padding-top: 40px;
+}
 
 p, label{
     margin-top: -60px;

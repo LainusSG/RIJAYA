@@ -30,7 +30,9 @@ input[type=text], input[type=password] {
 
 .button1 {
   background-color: #17d0e3;
-  color: black;  font-family: 'Barlow';font-weight: 100;
+  color: black;
+  font-family: 'Orbitron';
+  font-weight: 100;
   padding: 14px 20px;
   margin: auto;
   border: 1px solid white;
@@ -42,9 +44,9 @@ input[type=text], input[type=password] {
 }
 
 .button1:hover {
-  opacity: 0.8;
   background-color: #1be7fd;
 }
+
 
 
 .imgcontainer {

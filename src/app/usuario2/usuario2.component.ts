@@ -80,13 +80,11 @@ export class Usuario2Component {
   displayedColumns:  string[] = ['name','boton','icon'];
   dataSource = new MatTableDataSource<Nombres>(this.ELEMENT_DATA);
   
-  remove(element:any) {
-    this.dataSource.data.splice(this.ELEMENT_DATA.indexOf(element), 1);
+  remove(element) {
     this.dataSource = new MatTableDataSource<Nombres>(
       this.dataSource.data
     );
   }
-
 
 
 

@@ -46,7 +46,7 @@
 
         <ng-container matColumnDef="icon">
             <th mat-header-cell *matHeaderCellDef style="background-color: #048d9c;color:white;  font-family: 'Barlow';font-weight: 100;  width:10%"> </th>
-            <td mat-cell *matCellDef="let element" style="text-align: center; font-family: 'Barlow';font-weight: 100;">  <button mat-mini-fab style="background-color:transparent;box-shadow: none; color:white" (click)="remove()"><mat-icon>cancel</mat-icon></button> </td>
+            <td mat-cell *matCellDef="let score; let i = index;" style="text-align: center; font-family: 'Barlow';font-weight: 100;">  <button mat-mini-fab style="background-color:transparent;box-shadow: none; color:white" (click)="remove(i)"><mat-icon>cancel</mat-icon></button> </td>
         </ng-container>
 
 

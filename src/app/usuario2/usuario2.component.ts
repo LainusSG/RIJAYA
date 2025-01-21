@@ -18,6 +18,7 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import { MatSort } from '@angular/material/sort';
 
 export interface Nombres {
   name: string;
@@ -56,24 +57,50 @@ export interface Nombres {
 
 export class Usuario2Component {
 
-  @ViewChild(MatPaginator) paginator!: MatPaginator;
 
-  /**
-   * Set the paginator after the view init since this component will
-   * be able to query its view for the initialized paginator.
-   */
+  @ViewChild(MatPaginator) paginator: MatPaginator;
+  @ViewChild(MatSort) sort: MatSort;
+
+  constructor() {
+    // Create 100 users
+  
+
+    // Assign the data to the data source for the table to render
+    
+  }
+
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
+    this.dataSource.sort = this.sort;
+  }
+
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+
+    if (this.dataSource.paginator) {
+      this.dataSource.paginator.firstPage();
+    }
   }
 
 
-  
- 
+/** Builds and returns a new User. */
 
   ELEMENT_DATA: Nombres[] = [
     {name: 'Casimiro Gómez González'},
     {name: 'Juana Cruz Hernández'},
     {name: 'José Lino Santos García'},
+    {name: 'Tonatiuh Guzmán Aburto'},
+    {name: 'Munera Gomez Libardo'},
+    {name: 'Jaramillo Jaramillo Lina Marcela'},
+    {name: 'Sierra Ramírez Nohemí'},
+    {name: 'Ballesteros Muñoz Liliana Del Rosario'},
+    {name: 'Sisa Luz Esmeralda'},
+    {name: 'Gonzalez Gomez Luz Angela'},
+    {name: 'Hernandez Uribe Aura Janneth'},
+    {name: 'Rubio Jaramillo Luis Fernando'},
+    {name: 'Lopera Piedrahita Edwin Fernney'},
+    
   
   ];
 
@@ -96,4 +123,5 @@ export class Usuario2Component {
 
 
 }
+
 

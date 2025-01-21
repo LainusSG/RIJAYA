@@ -51,6 +51,8 @@
 
 .centro{
     width: 80%;
+    display: inline-table;
+    position: absolute;
     margin-left: 10%;
     margin-right: 10%;
     align-items: center; /* Para alinear items flexibles respecto al eje secundario */
@@ -124,3 +126,63 @@
   .remove {
     cursor: pointer;
   }
+
+
+  
+
+input[type=text], input[type=password] {
+  width: 200px;
+  height: 30px;
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 20px;
+  margin: 10px 0;
+  display: inline-block;
+  border-radius: 100px;
+  background-color: #17d0e3;
+}
+
+.form-group input[type=text],
+.form-group select{
+    font-size: 12px;
+    padding-left: 1em;
+    padding-right: 1em;
+    color: #ffffff;
+    height: 1.875em;
+    border-radius: 9px;
+    outline: none;
+    border: 1px solid #17d0e3;
+    width: 24.25em;
+}
+
+::placeholder {
+  color: white;
+}
+
+::-ms-input-placeholder { /* Edge 12 -18 */
+  color: white;
+}
+
+.container4{
+  text-align: right;
+  width: 100%;
+  padding-top: 40px;
+}
+
+
+.input-wrapper {
+  position: relative;
+  padding-top: 40px;
+}
+
+
+.input-icon {
+  color: #ffffff;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  left: -50px;
+  top: 50%;
+  transform: translateY(40%);
+}

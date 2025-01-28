@@ -1,6 +1,10 @@
 
 <div class="fondo">
-  <mat-drawer-container class="example-container" autosize>
+ <div class="chayote">
+  <h1> BIENVENIDO </h1>
+  </div>
+
+  <mat-drawer-container class="example-container" autosize style="margin-left: -20%;">
     <mat-drawer #drawer class="example-sidenav" mode="side">
       
       <div class="imgcontainer">
@@ -11,7 +15,7 @@
       
 
       <mat-list role="list" >
-      <mat-list-item role="listitem" >Almacén</mat-list-item>
+      <mat-list-item role="listitem" ><a href="/gemelo/">Gemelo Digítal</a></mat-list-item>
       <mat-list-item role="listitem">Recepción de Productos</mat-list-item>
       <mat-list-item role="listitem">Salida de Productos</mat-list-item>
       <mat-list-item role="listitem">Configuración</mat-list-item>
@@ -22,14 +26,11 @@
       <div class ="container3"><a href="/">Cerrar Sesión</a></div>
     </mat-drawer>
 
-    <div style="position: absolute;right: 50px; top:  50px; ">
-        <a href="/usuario/"><img class="img2" src="https://www.w3schools.com/howto/img_avatar.png" /></a>
-    </div>
-
+    
 
     
-    <div class="example-sidenav-content" class="aguacate" style="position: absolute;left: 50px; top:  50px; ">
-      <button  mat-mini-fab (click)="drawer.toggle()">
+    <div class="example-sidenav-content" class="aguacate" style="position: absolute;left: 50px; top:  150px; ">
+      <button  mat-mini-fab (click)="drawer.toggle()" >
           <mat-icon>menu</mat-icon>
       </button>
       
@@ -38,10 +39,7 @@
   </mat-drawer-container>
 
 
-  <div class="chayote">
-  <h1> BIENVENIDO </h1>
-  </div>
-
+ 
 
 
 </div>

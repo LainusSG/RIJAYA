@@ -1,15 +1,12 @@
-.fondo{
-  width: 100%;
-  height: 100vh;
-  background-image: url("/imagenes/FONDO.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 
+.fondo{
   display: flex;
-  justify-content: center;
-  align-content: center;
+  align-items: center;
   flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
 }
 
 .listabicolor {
@@ -115,7 +112,8 @@ input[type=text], input[type=password] {
   margin: 4px 0;
   display: inline-block;
   border-radius: 100px;
-  background-color: #17d0e3;
+  border: none;
+  background-color: #048d9c;
 }
 
 .form-group input[type=text],
@@ -127,7 +125,7 @@ input[type=text], input[type=password] {
     height: 1.875em;
     border-radius: 9px;
     outline: none;
-    border: 1px solid #C0C8E7;
+    border: none;
     width: 24.25em;
 }
 
@@ -213,21 +211,7 @@ h2{
   font-weight: 100;
 }
 
-.fondo{
-    width: 100%;
-    height: 100vh;
-    background-image: url("/imagenes/FONDO.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-    
-
-}
 
 h3{    
   color:white;

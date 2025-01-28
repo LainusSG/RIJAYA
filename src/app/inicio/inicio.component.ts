@@ -14,5 +14,4 @@ import {MatListModule} from '@angular/material/list';
   styleUrl: './inicio.component.css'
 })
 export class InicioComponent {
-  showFiller = false;
 }

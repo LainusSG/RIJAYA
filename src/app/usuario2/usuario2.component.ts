@@ -20,6 +20,9 @@ import {MatRadioModule} from '@angular/material/radio';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 
+import { DarkModeService } from 'angular-dark-mode';
+
+
 export interface Nombres {
   name: string;
 }
@@ -29,6 +32,7 @@ export interface Nombres {
 
 @Component({
   selector: 'app-usuario2',
+  standalone: true,
   imports: [FormsModule,
     MatToolbarModule,
     MatSidenavModule,

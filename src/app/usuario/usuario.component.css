@@ -1,14 +1,10 @@
 
+
 .fondo{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
+  margin-top: -170px;
   width: 100%;
-  min-height: 100%;
   height: 100%;
 }
-
 .listabicolor {
   width: 100%;
   border-collapse: collapse;
@@ -62,10 +58,6 @@
   border-radius: 50%;
 }
 
-h1{
-  color: white;
-  font-size: 60px;
-}
 
 
 
@@ -166,6 +158,7 @@ img.avatar {
 }
 
 .container2{
+    margin-top: 0px;
     text-align: center;
     width: 100%;
 }
@@ -178,7 +171,6 @@ img.avatar {
 
 p, label{
     margin-top: -60px;
-    color:white;
     
     font-size: larger;
 }
@@ -197,7 +189,6 @@ p, label{
 
 
 h1{
-  color: white;
   font-family: 'Orbitron';
   font-weight: 100;
   font-size: 60px;
@@ -206,7 +197,6 @@ h1{
 
 h2{
   font-size: 25px;
-  color: white;
   font-family: 'Orbitron';
   font-weight: 100;
 }

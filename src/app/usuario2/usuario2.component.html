@@ -1,16 +1,12 @@
-<div class="fondo">
 
 
-    <div style="position: absolute; left:50%; justify-content: center;transform: translate(-50%, 0px); text-align:center; top: 50px;  display:block;">
+<div style="text-align: center;">
        <h1> Usuarios</h1>
     </div>
 
- 
-    
 
 
-
-
+<div class="fondo">
     <div class="centro" style="display: block;">
         <div class="container4">
             <div class="input-wrapper">
@@ -28,7 +24,7 @@
           
               <!-- Name Column -->
               <ng-container matColumnDef="name">
-                <th mat-header-cell *matHeaderCellDef mat-sort-header style="background-color: #048d9c;color:white;  font-family: 'Barlow';font-weight: 100;  width:80%"> Nombre del Usuario</th>
+                <th mat-header-cell *matHeaderCellDef mat-sort-header style="background-color: #048d9c; font-family: 'Barlow';font-weight: 100;  width:80%; font-weight: bold;"> Nombre del Usuario</th>
                 <td mat-cell *matCellDef="let row"> {{row.name}} </td>
               </ng-container>
           
@@ -36,13 +32,13 @@
               
         <ng-container matColumnDef="boton">
             <th mat-header-cell *matHeaderCellDef style="background-color: #048d9c;color:white;  font-family: 'Barlow';font-weight: 100;  width:10%"> </th>
-            <td mat-cell *matCellDef="let element" style="text-align: center; font-family: 'Barlow';font-weight: 100;"> <a href="/usuario/"><button mat-mini-fab style="background-color:transparent;box-shadow: none; color:white" ><mat-icon>edit</mat-icon></button></a></td>
+            <td mat-cell *matCellDef="let element" style="text-align: center; font-family: 'Barlow';font-weight: 100;"> <a href="/usuario/"><button mat-mini-fab style="background-color:transparent;box-shadow: none;"  class="icon"><mat-icon>edit</mat-icon></button></a></td>
         </ng-container>
 
 
         <ng-container matColumnDef="icon">
             <th mat-header-cell *matHeaderCellDef style="background-color: #048d9c;color:white;  font-family: 'Barlow';font-weight: 100;  width:10%"> </th>
-            <td mat-cell *matCellDef="let score; let i = index;" style="text-align: center; font-family: 'Barlow';font-weight: 100;">  <button mat-mini-fab style="background-color:transparent;box-shadow: none; color:white" (click)="remove(i)"><mat-icon>cancel</mat-icon></button> </td>
+            <td mat-cell *matCellDef="let score; let i = index;" style="text-align: center; font-family: 'Barlow';font-weight: 100;">  <button mat-mini-fab style="background-color:transparent;box-shadow: none; " class="icon" (click)="remove(i)"><mat-icon>cancel</mat-icon></button> </td>
         </ng-container>
 
           
@@ -55,7 +51,7 @@
               </tr>
             </table>
           
-            <mat-paginator style="background-color: #048d9c;color:white; " [pageSizeOptions]="[5]" aria-label="Select page of users"></mat-paginator>
+            <mat-paginator  class="mat-paginator" style="background-color: #048d9c; " [pageSizeOptions]="[5]" aria-label="Select page of users"></mat-paginator>
           </div>
 
          <div class="container3">    

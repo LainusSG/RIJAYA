@@ -1,6 +1,8 @@
-<div class="container3b" style="margin-top: 250px;">    
-    <a href="/crear-estante/" class="button1" style="margin-right:10px" >Crear Estante</a>
-</div> 
+<div style=" position: absolute; width: 100%; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+
+    <div class="container3b" >    
+        <a href="/crear-estante/" class="button1" style="margin-right:10px" >Crear Estante</a>
+    </div> 
     <div class="expansor"  style="margin-top: 50px;" >
         <mat-accordion>
             <mat-expansion-panel hideToggle style="margin-top: 20px; background-color: #048d9c;" *ngFor="let d of esterilizadores; index as iii;">
@@ -10,15 +12,16 @@
                 <div class="container3">
                     <img src="{{d.img}}" width="30%" height="80%">
                 </div>
-
+    
                 <div class="container3c" style="margin-top: 50px;">    
                     <a  class="button1" style="margin-right:10px" href="/crear-estante/"  >Editar Estante</a>
                 </div> 
             </mat-expansion-panel>
-        
-        </mat-accordion>
-        
+        </mat-accordion> 
     </div>
+    
+</div>
+
 
 
     

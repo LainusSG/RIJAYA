@@ -32,7 +32,9 @@ export interface nombres {
             MatAccordion,
             CommonModule,
             MatFormFieldModule,
-            MatInputModule,],
+            MatInputModule,
+            
+          ],
   templateUrl: './gemelo.component.html',
   styleUrl: './gemelo.component.css'
 })

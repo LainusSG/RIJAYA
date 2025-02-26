@@ -1,46 +1,4 @@
 
-.fondo{
-  margin-top: -100px;
-  width: 100%;
-  height: 100%;
-}
-.listabicolor {
-    width: 100%;
-    border-collapse: collapse;
-    color: white;
-  }
-  .listabicolor  tr:nth-child(even) {
-      background-color:transparent;
-      color: white;
-    }
-  
-    .listabicolor tr:nth-child(odd) {
-        background-color:transparent;
-        color: white;
-    }
-
-
-
-    
-
-
-
-      mat-paginator {
-        display: flex;
-        justify-content: center;
-      }
-
-.centro{
-    width: 80%;
-    display: inline-table;
-    position: absolute;
-    margin-left: 10%;
-    margin-right: 10%;
-    align-items: center; /* Para alinear items flexibles respecto al eje secundario */
-    align-content: center;
-    
-}
-
 .img2 {
     height: 100px;
     width: 100px;
@@ -63,6 +21,7 @@
   
   
   h1{
+    color: white;
     font-family: 'Orbitron';
     font-weight: 100;
     font-size: 60px;
@@ -120,8 +79,7 @@ input[type=text], input[type=password] {
   margin: 10px 0;
   display: inline-block;
   border-radius: 100px;
-  border: none;
-  background-color: #048d9c;
+  background-color: #17d0e3;
 }
 
 .form-group input[type=text],
@@ -133,7 +91,7 @@ input[type=text], input[type=password] {
     height: 1.875em;
     border-radius: 9px;
     outline: none;
-    border: none;
+    border: 1px solid #17d0e3;
     width: 24.25em;
 }
 
@@ -166,4 +124,52 @@ input[type=text], input[type=password] {
   left: -50px;
   top: 50%;
   transform: translateY(40%);
+}
+.dropdown {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  overflow: auto;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  display: block;
+  color: #000000;
+  padding: 5px;
+  text-decoration: none;
+}
+.dropdown-content a:hover {
+  color: #FFFFFF;
+  background-color: #00A4BD;
+}
+
+p{
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.mr-2{
+  color: white;
+  font-size: 20px;
+}
+.mr-3{
+  color: white;
+}
+
+.mat-divider {
+  border-top-color: white;
+  border-bottom-color: white;
+}
+
+.botton-toolbar{
+  background-color: transparent;
+  border: none;
 }

@@ -15,6 +15,7 @@ import {MatRadioModule} from '@angular/material/radio';
 
 @Component({
   selector: 'app-usuario',
+  standalone: true,
   imports: [FormsModule, 
     MatFormFieldModule, 
     MatInputModule, 

@@ -10,7 +10,7 @@ input[type=text], input[type=password] {
   display: inline-block;
   border-radius: 100px;
   border: none;
-  background-color: #048d9c;
+  background-color: #A6CAEC;
 }
 
 .form-group input[type=text],
@@ -27,8 +27,8 @@ input[type=text], input[type=password] {
 }
 
 .button1 {
-  background-color: #17d0e3;
-  color: black;
+  background-color: #215F9A;
+  
   font-family: 'Orbitron';
   font-weight: 100;
   padding: 14px 20px;
@@ -42,7 +42,7 @@ input[type=text], input[type=password] {
 }
 
 .button1:hover {
-  background-color: #1be7fd;
+  background-color: #2670b4;
 }
 
 
@@ -71,7 +71,7 @@ img.avatar {
 
 p, label{
     margin-top: -60px;
-    color:white;
+    
     font-weight: bold;
     font-size: larger;
 }
@@ -90,15 +90,15 @@ p, label{
 
 
 h1{
-  color: white;
+  
   font-family: 'Orbitron';
   font-weight: 100;
   font-size: 60px;
 }
 
 h3{    
-  color:white;  font-family: 'Barlow';font-weight: 100;
-  font-size: 30px;
+    font-family: 'Barlow';font-weight: bold;
+  font-size: 23px;
   writing-mode: vertical-lr;
   text-orientation: upright;
   position: absolute;
@@ -108,8 +108,8 @@ h3{
   left: 5%;
 }
 h4{    
-  color:white;  font-family: 'Barlow';font-weight: 100;
-  font-size: 30px;
+    font-family: 'Barlow';font-weight: bold;
+  font-size: 25px;
   writing-mode: vertical-lr;
   text-orientation: upright;
   position: absolute;
@@ -122,8 +122,8 @@ h4{
 
 h5{    
   word-wrap: break-word;
-  color:white;  font-family: 'Barlow';font-weight: 100;
-  font-size: 30px;
+  font-family: 'Barlow';font-weight: bold;
+  font-size: 25px;
   writing-mode: vertical-rl;
   text-orientation: upright;
   position: absolute;
@@ -131,8 +131,8 @@ h5{
   right: 5%
 }
 h6{    
-  color:white;  font-family: 'Barlow';font-weight: 100;
-  font-size: 30px;
+    font-family: 'Barlow';font-weight: bold;
+  font-size: 25px;
   writing-mode: vertical-rl;
   text-orientation: upright;
   position: absolute;

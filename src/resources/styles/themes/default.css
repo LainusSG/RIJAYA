@@ -1,0 +1,58 @@
+:root {
+    --theme-background: white;
+    --theme-color: black;
+
+  
+  
+    h1, h2, h3, h4, h5, h6{
+      color: black;
+  }
+
+  p{
+    color:black; 
+  }
+
+  label{
+    color:black; 
+  }
+
+  th{
+    color:black; 
+  }
+
+  td{
+    color:black; 
+  }
+
+  .mat-paginator {
+    color:black;
+  }
+
+
+  .icon{
+    color:black;
+  }
+
+  .button1{
+    color: black;
+  }
+
+  .listabicolor {
+    border: black 1px solid;
+  }
+  tbody {
+    border:black 1px solid;
+  }
+  tr {
+    border: black 1px solid;
+  }
+  td {
+    border: black 1px solid;
+  }
+
+  mat-panel-title{
+    color: black;
+  }
+  }
+
+

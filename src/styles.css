@@ -1,13 +1,10 @@
 
-html, body { height: 100%; }
+@import './resources/styles/themes/default.css';
+@import './resources/styles/themes/dark.css';
+@import './resources/styles/base.css'; 
+
+html, body { height: 100%; ;}
 body { margin: 0;}
 
 
 
-  html {
-    background:  #222226;;
-  }
-
-  
-
-  

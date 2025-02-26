@@ -1,0 +1,54 @@
+<div style="width: 100%; height: 100%;" >
+  <mat-toolbar  style="padding: 20px; width: 100%; height: 90px; background-color: #048d9c;">
+    
+    <button class="botton-toolbar"   (click)="drawer.toggle()">
+      <img src="imagenes/LOGO RACSAPP-BLANCO.png" style="width: 80px; height: 70px;">
+    </button>
+
+    <button class="botton-toolbar"  routerLink="/home" routerLinkActive="router-link-active" style="height: 80px; width: 80px; text-align: center;">
+      <mat-icon class="mr-3" style="font-size:27px;">home</mat-icon>
+    </button>
+    
+    <div style=" width: 100%; text-align: right;" >
+      <section class="example-section">
+        <mat-slide-toggle
+            class="example-margin"
+            [(ngModel)]="dark"
+            >
+            <mat-icon style="color: {{color}}; font-size:25px;" >{{icono}}</mat-icon>
+        </mat-slide-toggle>
+      </section>
+    </div>
+
+    
+
+  </mat-toolbar>
+
+  <mat-drawer-container  style="width: 100%; height: 90%; background-color: transparent; " hasBackdrop="true" >
+    <mat-drawer #drawer mode="push" style="padding: 30px; background-color: #048d9c; border-radius: 50px; margin-bottom: 1%; margin-top: 1%; margin-left: 1%;">
+      <div >
+        <button mat-button routerLink="/gemelo" routerLinkActive="selected no-border txt-bold" fxLayoutAlign="start" class="py-2 pr-5">
+          <mat-icon class="mr-2">file_copy</mat-icon><p>Gemelo Digítal</p></button>
+        <mat-divider></mat-divider><br>
+        <button mat-button routerLink="/#" routerLinkActive="selected no-border txt-bold" fxLayoutAlign="start" class="py-2 pr-5">
+          <mat-icon class="mr-2"> list_alt</mat-icon><p>Recepcion de productos</p></button>
+        <mat-divider></mat-divider><br>
+        <button mat-button routerLink="/#" routerLinkActive="selected no-border txt-bold" fxLayoutAlign="start" class="py-2 pr-5">
+          <mat-icon class="mr-2">transit_enterexit</mat-icon><p>Salida de Productos</p></button>
+        <mat-divider></mat-divider><br>
+        <button mat-button routerLink="/#" routerLinkActive="selected no-border txt-bold" fxLayoutAlign="start" class="py-2 pr-5">
+          <mat-icon class="mr-2">settings</mat-icon><p>Configuración</p></button>
+        <mat-divider></mat-divider><br>
+        <button mat-button routerLink="/usuarios" routerLinkActive="selected no-border txt-bold" fxLayoutAlign="start" class="py-2 pr-5">
+          <mat-icon class="mr-2">supervised_user_circle</mat-icon><p>Usuarios</p></button>
+        <mat-divider></mat-divider>
+      </div>
+    </mat-drawer>
+
+    <!--PAGES-->
+    <div style="display: inline;">
+      <router-outlet></router-outlet>
+    </div>
+
+  </mat-drawer-container>
+</div>

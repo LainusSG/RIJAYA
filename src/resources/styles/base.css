@@ -1,0 +1,35 @@
+html {
+    background: var(--theme-background);
+    color: var(--theme-color);
+    transition: all ease-in-out 400ms;
+  }
+
+  
+  h1, h2, h3, h4, h5, h6{
+    color: black;
+}
+
+p{
+  color:white; 
+}
+
+label{
+  color:black; 
+}
+
+th{
+  color:black; 
+}
+
+td{
+  color:black; 
+}
+
+.mat-paginator {
+  color:white;
+}
+
+
+mat-panel-title{
+  color: black;
+}

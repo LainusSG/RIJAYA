@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'Orbitron';
+    src: url('/public/fonts/Orbitron/Orbitron-Regular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Barlow';
+    src: url('/public/fonts/Barlow/Barlow-BlackItalic.ttf')format('truetype');
+
+  }
+  
+  
+  
+  h1{
+    font-family: 'Orbitron';
+    font-weight: 100;
+    font-size: 60px;
+}
+
+
+
+input[type=text], input[type=password] {
+    width: 200px;
+    height: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border-radius: 100px;
+    border: none;
+    background-color: #048d9c;
+  }
+  
+  .form-group input[type=text],
+  .form-group select{
+      font-size: 12px;
+      padding-left: 1em;
+      padding-right: 1em;
+      color: #ffffff;
+      height: 1.875em;
+      border-radius: 9px;
+      outline: none;
+      border: none;
+      width: 24.25em;
+  }
+
+th{
+    background-color:transparent;
+}
+td{
+    background-color:transparent;
+}
+tr{
+    background-color:transparent;
+}
+   
+  .button1 {
+    background-color: #17d0e3;
+    color: black;
+    font-family: 'Orbitron';
+    font-weight: 100;
+    padding: 14px 20px;
+    margin: auto;
+    border: 1px solid white;
+    cursor: pointer;
+    width: 150px;
+    border-radius: 100px;
+    margin-top: 35px;
+    text-decoration: none;
+  }
+  
+  .button1:hover {
+    background-color: #1be7fd;
+  }
